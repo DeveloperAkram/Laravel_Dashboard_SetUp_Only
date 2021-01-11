@@ -8,6 +8,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{route('user.index')}}">
+                    <span data-feather="user"></span>
+                    Users
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="file"></span>
                     Orders

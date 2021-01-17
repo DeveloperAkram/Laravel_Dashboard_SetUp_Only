@@ -2,7 +2,7 @@
 
 @section('main')
 
-    <div style="padding: 50px 20px 0 300px">
+    <div style="padding: 50px 20px 0 350px">
         <h2 class="text-center">Add user </h2>
     <form action="{{route('user.store')}}" method="post">
         @csrf

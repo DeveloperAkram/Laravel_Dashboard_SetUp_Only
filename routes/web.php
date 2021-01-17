@@ -24,6 +24,20 @@ Route::get('/form', function () {
 // user link up
 Route::get('/users',[\App\Http\Controllers\UserController::class,'index'])->name('user.index');
 
+// create
 Route::get('/users/create',[\App\Http\Controllers\UserController::class,'create'])->name('user.create');
 
+// store
 Route::post('/users/store',[\App\Http\Controllers\UserController::class,'store'])->name('user.store');
+
+// show
+Route::get('/users/{id}',[\App\Http\Controllers\UserController::class,'show'])->name('user.show');
+
+// edit
+Route::get('/users/edit/{id}',[\App\Http\Controllers\UserController::class,'edit'])->name('user.edit');
+
+// update
+Route::post('/users/update/{id}',[\App\Http\Controllers\UserController::class,'update'])->name('user.update');
+
+// delete
+Route::get('/users/delete/{id}',[\App\Http\Controllers\UserController::class,'delete'])->name('user.delete');
